@@ -49,13 +49,15 @@ body{
     top: 0;
     left: 0;
     z-index: 10000;
-    transition: 1s ease-in-out;
+    transition: 0.5s ease-in-out;
     display: flex;
     align-items: center;
     overflow: hidden;
+    background: linear-gradient(rgb(9, 0, 138),rgb(155, 6, 241) );
 }
 .form-box.active{
     left: 50%;
+    background: linear-gradient(rgb(136, 1, 1),rgb(155, 6, 241) );
 }
 .form{
     width: 100%;
@@ -78,7 +80,7 @@ body{
 .form__title{
     font-size: 16px;
     font-weight: 500;
-    color: #333;
+    color: #f7f6f6;
 }
 .form__input{
     width: 100%;
@@ -89,13 +91,13 @@ body{
     border:none;
     cursor:pointer;
     font-size:inherit;
-    background-color: aqua;
-    color: #333;
+    background-color: rgb(155, 6, 241);
+    color: #fdfdfd;
     padding: 10px 50px;
 }
 .form__forgot{
     color: #333;
 }
 .form__btn_signup{
-    background-color: rgb(255, 0, 0);
+    background-color: rgb(158, 23, 23);
 }
