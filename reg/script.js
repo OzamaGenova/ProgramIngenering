@@ -8,20 +8,20 @@ singUpBtn.addEventListener('click', function(){
 singInBtn.addEventListener('click', function(){
     formBox.classList.remove('active');
 })
-function checkEmpty(id){
+function checkEmpty(id){//функция для проверки ввода 
     let inputfield = document.getElementById(id);
     if (inputfield.value === ""){
         alert("Заполните все поля");
     }
 }
-function checkEmail(id){
+function checkEmail(id){//функция для проверки ввода почты
     var reg = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     let email = document.getElementById(id);
     if(reg.test(email.value) == false){
         alert("Неправильно указан email");
     }
 }
-function checkDoublePassword(id1,id2){
+function checkDoublePassword(id1,id2){//функция для проверки ввода пароля
     let pas1 = document.getElementById(id1).value;
     let pas2= document.getElementById(id2).value;
     if(pas1!=pas2){
