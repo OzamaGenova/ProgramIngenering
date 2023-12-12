@@ -23,13 +23,13 @@
             <form action="#" class="form form_signin">
                 <h3 class="form__title">Вход</h3>
                 <p>
-                    <input type="text" class="form__input" placeholder="Логин">
+                    <input type="text" class="form__input" id= "11"placeholder="Логин">
                 </p>
                 <p>
-                    <input type="password" class="form__input" placeholder="Пароль">
+                    <input type="password" class="form__input" id="21" placeholder="Пароль">
                 </p>
                 <p>
-                    <button class="form__btn">Войти</button>
+                    <button onclick="checkEmpty('11'),checkEmpty('21'), checkEmail('11')" class="form__btn">Войти</button>
                 </p>
                 <p>
                     <a href="#" class="form__forgot">Забыли пароль?</a>
@@ -38,19 +38,16 @@
             <form action="#" class="form form_signup">
                 <h3 class="form__title">Регистрация</h3>
                 <p>
-                    <input type="text" class="form__input" placeholder="Логин">
+                    <input type="email" class="form__input" id="12" placeholder="Email">
                 </p>
                 <p>
-                    <input type="email" class="form__input" placeholder="Email">
+                    <input type="password" class="form__input" id="22" placeholder="Пароль">
                 </p>
                 <p>
-                    <input type="password" class="form__input" placeholder="Пароль">
+                    <input type="password" class="form__input" id="32" placeholder="Повторите пароль">
                 </p>
                 <p>
-                    <input type="password" class="form__input" placeholder="Повторите пароль">
-                </p>
-                <p>
-                    <button class="form__btn form__btn_signup">Зарегистрироваться</button>
+                    <button onclick="checkEmpty('12'),checkEmpty('22'),checkEmpty('32'), checkEmail('12'), checkDoublePassword('22','32')" class="form__btn form__btn_signup">Зарегистрироваться</button>
                 </p>
             </form>
         </div>
