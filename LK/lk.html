@@ -5,33 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Личный кабинет</title>
   <link rel="stylesheet" href="stylelk.css">
+  <script src="lk.js" defer></script>
 </head>
 <body>
   <div class="container">
-    <h1>Личный кабинет</h1>
-    <form>
-      <div class="form-group">
-        <label for="firstName">Имя:</label>
-        <input type="text" id="firstName" name="firstName">
-      </div>
-      <div class="form-group">
-        <label for="lastName">Фамилия:</label>
-        <input type="text" id="lastName" name="lastName">
-      </div>
-      <div class="form-group">
-        <label for="email">Почта:</label>
-        <input type="email" id="email" name="email">
-      </div>
-      <div class="form-group">
-        <label for="password">Пароль:</label>
-        <input type="password" id="password" name="password">
-      </div>
-      <div class="form-group">
-        <label for="phone">Номер телефона:</label>
-        <input type="tel" id="phone" name="phone">
-      </div>
-      <button type="submit">Сохранить изменения</button>
-    </form>
+    <nav class="sidebar">
+      <ul>
+        <li class="active" onclick="showTab('profile')"><a href="#">Редактирование профиля</a></li>
+        <li onclick="showTab('orders')"><a href="#">Заказы</a></li>
+      </ul>
+    </nav>
+    <div class="main-content">
+      <section id="profile" class="tab-content">
+        <h1>Редактирование профиля</h1>
+        <form>
+          <div class="form-group">
+            <label for="firstName">Имя:</label>
+            <input type="text" id="firstName" name="firstName">
+          </div>
+          <div class="form-group">
+            <label for="lastName">Фамилия:</label>
+            <input type="text" id="lastName" name="lastName">
+          </div>
+          <div class="form-group">
+            <label for="email">Почта:</label>
+            <input type="email" id="email" name="email">
+          </div>
+          <div class="form-group">
+            <label for="password">Пароль:</label>
+            <input type="password" id="password" name="password">
+          </div>
+          <div class="form-group">
+            <label for="phone">Номер телефона:</label>
+            <input type="tel" id="phone" name="phone">
+          </div>
+          <button type="submit">Сохранить изменения</button>
+        </form>
+      </section>
+      <section id="orders" class="tab-content" style="display: none;">
+        <h1>Заказы</h1>
+        <!-- Здесь может быть информация о заказах пользователя -->
+      </section>
+    </div>
   </div>
 </body>
 </html>

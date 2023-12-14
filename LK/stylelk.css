@@ -1,41 +1,70 @@
-body, html{
+body, html {
     height: 100%;
     margin: 0;
-    font-family: Arial, sans-serif;
-}
-.container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100%;
+    font-family: "Gill Sans", sans-serif;
     background: linear-gradient(to left, rgb(155, 6, 241), rgb(86, 0, 245));
 }
-form{
+.container {
     display: flex;
-    flex-direction: column;
-    gap: 10px;
-    width: 300px;
+    height: 100%;
+}
+.sidebar {
+    display: flex;
+    padding: 30px;
+    color: rgb(201, 201, 162);
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.sidebar li {
+    margin-bottom: 10px;
+}
+.sidebar a {
+    color: #fff;
+    text-decoration: none;
+}
+.sidebar a:hover {
+    text-decoration: underline;
+}
+.sidebar .active a {
+    font-weight: bold;
+    color: dodgerblue;
+}
+h1{
+    color: rgb(201, 201, 162);
+    font-size: 30px;
+} 
+.main-content {
+    display: flex;
+    flex: 1;
     padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-shadow: 0 2px 5px #0000001a;
-    background-color: rgb(201, 201, 169);
+    align-items: center;
+    justify-content: center;
 }
-.form-group{
-    display: flex;
-    flex-direction: column;
-
+.tab-content {
+    display: none;
 }
-label{
+.tab-content.active {
+    display: block;
+}
+.form-group {
+    margin-bottom: 10px;
+}
+label {
+    display: block;
     margin-bottom: 5px;
 }
-input{
+input {
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 3px;
     transition: border-color 0.2s ease-in-out;
-}
+} 
 input:focus {
     outline: none;
     border-color: dodgerblue;
@@ -51,7 +80,5 @@ button {
 }
 button:hover {
     background-color: #007acc;
-  }
-h1{
-    color: rgb(201, 201, 162);
 }
+  
