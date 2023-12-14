@@ -81,4 +81,20 @@ button {
 button:hover {
     background-color: #007acc;
 }
-  
+.order-list {
+    list-style: none;
+    padding: 0;
+  }
+.order-item {
+    background-color: #f9f9f9;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px #0000001a;
+}
+.order-name {
+    font-weight: bold;
+}
+.order-price {
+    color: green;
+}
