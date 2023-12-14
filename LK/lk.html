@@ -1,27 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Личный кабинет</title>
-    <link rel = "stylesheet" href="stylelk.css"> 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Личный кабинет</title>
+  <link rel="stylesheet" href="stylelk.css">
 </head>
 <body>
-    <div class="main_menu">
-        <div class="personaldata">
-            <a class="first_name"><input type="text" name="Имя,">Имя</a><br>
-            <a class="last_name"><input type="text" name="Фамилию, сцука">Фамилия</a><br>
-            <a class="phone_number"><input type="number" name="Введите телефон">Номер телефона</a><br>
-            <a class="email"><input type="email" name="Введите почту">Электронная почта</a><br>
-        </div>
-        <div class="orders">
-            <a>
-                Тут будет информация заказов
-            </a>
-        </div>
-        <div class="exit">
-            <button>Выйти из системы</button>
-        </div>
-    </div>
+  <div class="container">
+    <h1>Личный кабинет</h1>
+    <form>
+      <div class="form-group">
+        <label for="firstName">Имя:</label>
+        <input type="text" id="firstName" name="firstName">
+      </div>
+      <div class="form-group">
+        <label for="lastName">Фамилия:</label>
+        <input type="text" id="lastName" name="lastName">
+      </div>
+      <div class="form-group">
+        <label for="email">Почта:</label>
+        <input type="email" id="email" name="email">
+      </div>
+      <div class="form-group">
+        <label for="password">Пароль:</label>
+        <input type="password" id="password" name="password">
+      </div>
+      <div class="form-group">
+        <label for="phone">Номер телефона:</label>
+        <input type="tel" id="phone" name="phone">
+      </div>
+      <button type="submit">Сохранить изменения</button>
+    </form>
+  </div>
 </body>
 </html>
