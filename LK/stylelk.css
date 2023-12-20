@@ -23,17 +23,17 @@ body, html {
 }
 .sidebar li {
     margin-bottom: 10px;
-}
+}   
 .sidebar a {
     color: #fff;
     text-decoration: none;
+    transition: color 0.5s ease-in-out; 
 }
 .sidebar a:hover {
-    text-decoration: underline;
+    color:rgb(249, 249, 134)
 }
 .sidebar .active a {
     font-weight: bold;
-    color: dodgerblue;
 }
 h1{
     color: rgb(201, 201, 162);
