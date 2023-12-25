@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>INALLWHEEL</title>
     <script src="reg.js" defer></script>
+    <script src="reg1.js" defer></script>
 </head>
 <body>
     <article class="container">
@@ -23,7 +24,7 @@
             <form action="#" class="form form_signin">
                 <h3 class="form__title">Вход</h3>
                 <p>
-                    <input type="text" class="form__input" id= "11"placeholder="Логин">
+                    <input type="email" class="form__input" id= "11"placeholder="Email">
                 </p>
                 <p>
                     <input type="password" class="form__input" id="21" placeholder="Пароль">
@@ -38,16 +39,25 @@
             <form action="#" class="form form_signup">
                 <h3 class="form__title">Регистрация</h3>
                 <p>
-                    <input type="email" class="form__input" id="12" placeholder="Email">
+                    <input type="first_name" class="form__input" id="name" placeholder="Имя">
                 </p>
                 <p>
-                    <input type="password" class="form__input" id="22" placeholder="Пароль">
+                    <input type="last_name" class="form__input" id="surname" placeholder="Фамилия">
                 </p>
                 <p>
-                    <input type="password" class="form__input" id="32" placeholder="Повторите пароль">
+                    <input type="number" class="form__input" id="num" placeholder="Номер телефона">
                 </p>
                 <p>
-                    <button onclick="checkEmpty('12'),checkEmpty('22'),checkEmpty('32'), checkEmail('12'), checkDoublePassword('22','32')" class="form__btn form__btn_signup">Зарегистрироваться</button>
+                    <input type="email" class="form__input" id="email" placeholder="Email">
+                </p>
+                <p>
+                    <input type="password" class="form__input" id="pass" placeholder="Пароль">
+                </p>
+                <p>
+                    <input type="password" class="form__input" id="pass1" placeholder="Повторите пароль">
+                </p>
+                <p>
+                    <button onclick="checkEmpty('email'),checkEmpty('pass'),checkEmpty('pass1'), checkEmail('email'), checkDoublePassword('pass','pass1')" class="form__btn form__btn_signup" id="submit" >Зарегистрироваться</button>
                 </p>
             </form>
         </div>

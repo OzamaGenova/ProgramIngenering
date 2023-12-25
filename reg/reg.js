@@ -11,21 +11,20 @@ singInBtn.addEventListener('click', function(){
 function checkEmpty(id){//функция для проверки ввода 
     let inputfield = document.getElementById(id);
     if (inputfield.value === ""){
-        alert("Заполните все поля");
+        alert("Заполните все поля!");
     }
 }
 function checkEmail(id){//функция для проверки ввода почты
     var reg = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     let email = document.getElementById(id);
     if(reg.test(email.value) == false){
-        alert("Неправильно указан email");
+        alert("Неправильно указан email!");
     }
 }
 function checkDoublePassword(id1,id2){//функция для проверки ввода пароля
     let pas1 = document.getElementById(id1).value;
     let pas2= document.getElementById(id2).value;
     if(pas1!=pas2){
-        alert("Пароли не совпадают");
+        alert("Пароли не совпадают!");
     }
-
 }
