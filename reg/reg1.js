@@ -34,4 +34,3 @@ submit.addEventListener('click', () =>{
     console.log(users);
     localStorage.setItem('user', JSON.stringify(user) )
 })
-
